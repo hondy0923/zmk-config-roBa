@@ -132,7 +132,7 @@
 &trans          &trans                  &trans          &trans                   &trans   &trans      &kp LC(LA(DEL))  &trans                                                                           &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
+            sensor-bindings = <&encoder_msc_down_up>;
         };
 
         MOUSE {
