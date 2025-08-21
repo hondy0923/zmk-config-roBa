@@ -131,6 +131,8 @@
 &mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD    &kp EQUAL                    &trans          &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE       &kp BACKSLASH
 &trans                      &trans           &trans           &trans           &trans        &trans                       &trans          &trans                                                                     &kp PIPE
             >;
+
+            sensor-bindings = <&inc_dec_kp LS(LC(K_SCROLL_UP)) LS(LC(K_SCROLL_DOWN))>;
         };
 
         ARROW {
@@ -141,7 +143,7 @@
 &trans          &trans                  &trans          &trans                   &trans   &trans      &trans       &trans                                                                            &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
+            sensor-bindings = <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>;
         };
 
         MOUSE {
