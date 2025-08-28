@@ -99,6 +99,13 @@
             bindings = <&kp KP_NUMBER_2 &kp LS(A) &kp KP_NUMBER_3 &kp KP_NUMBER_0 &kp KP_NUMBER_1 &kp A &kp KP_NUMBER_2 &kp KP_NUMBER_9 &kp KP_NUMBER_1 &kp KP_NUMBER_8 &kp KP_NUMBER_4 &kp KP_NUMBER_1 &kp QMARK>;
             label = "PASS";
         };
+
+        ALLCOPY: ALLCOPY {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(LS(RIGHT_ARROW)) &kp LC(LS(DOWN_ARROW))>;
+            label = "ALLCOPY";
+        };
     };
 
     behaviors {
@@ -162,10 +169,10 @@
 
         ARROW {
             bindings = <
-&pass   &none   &none   &none  &none                               &kp EXCLAMATION  &kp AT                 &kp HASH      &kp DOLLAR            &kp PERCENT
-&none   &none   &none   &none  &none  &none      &kp LEFT_BRACKET  &kp CARET        &kp AMPERSAND          &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp PLUS
-&none   &none   &none   &none  &none  &none      &kp DOWN_ARROW    &kp QUESTION     &kp RIGHT_PARENTHESIS  &kp PIPE      &none                 &none
-&trans  &trans  &trans  &none  &none  &none      &none             &none                                                                       &none
+&pass   &none   &none   &kp LC(HOME)  &ALLCOPY                               &kp EXCLAMATION  &kp AT                 &kp HASH      &kp DOLLAR            &kp PERCENT
+&none   &none   &none   &none         &none     &none      &kp LEFT_BRACKET  &kp CARET        &kp AMPERSAND          &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp PLUS
+&none   &none   &none   &none         &none     &none      &kp DOWN_ARROW    &kp QUESTION     &kp RIGHT_PARENTHESIS  &kp PIPE      &none                 &none
+&trans  &trans  &trans  &none         &none     &none      &none             &none                                                                       &none
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
