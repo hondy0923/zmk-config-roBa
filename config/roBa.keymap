@@ -153,7 +153,7 @@
 &kp LEFT_CONTROL  &trans  &trans  &trans  &trans  &trans      &none  &none                                                   &none
             >;
 
-            sensor-bindings = <&inc_dec_kp 0 0>;
+            sensor-bindings = <&encoder_msc_down_up>;
         };
 
         NUM {
@@ -164,7 +164,7 @@
 &kp PLUS    &kp SLASH          &kp KP_NUMBER_0  &kp DEL          &kp BACKSPACE    &kp ENTER             &kp BACKSPACE  &none                                                               &none
             >;
 
-            sensor-bindings = <&inc_dec_kp 0 0>;
+            sensor-bindings = <&encoder_msc_down_up>;
         };
 
         ARROW {
@@ -186,7 +186,7 @@
 &kp LEFT_CONTROL  &kp LEFT_GUI  &kp LEFT_SHIFT  &none               &none                &none      &none  &none                                &none
             >;
 
-            sensor-bindings = <&inc_dec_kp 0 0>;
+            sensor-bindings = <&encoder_msc_down_up>;
         };
 
         SCROLL {
@@ -197,7 +197,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp 0 0>;
+            sensor-bindings = <&encoder_msc_down_up>;
         };
 
         layer_6 {
@@ -208,7 +208,7 @@
 &trans  &trans        &trans        &trans        &trans  &trans      &trans       &trans                                                  &bt BT_CLR_ALL
             >;
 
-            sensor-bindings = <&inc_dec_kp 0 0>;
+            sensor-bindings = <&encoder_msc_down_up>;
         };
     };
 };
