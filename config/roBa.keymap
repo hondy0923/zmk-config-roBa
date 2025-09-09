@@ -93,10 +93,10 @@
             label = "TO_LAYER_0";
         };
 
-        MACRO1: pass {
+        MACRO: pass {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp KP_NUMBER_2 &kp LS(A) &kp KP_NUMBER_3 &kp KP_NUMBER_0 &kp KP_NUMBER_1 &kp A &kp KP_NUMBER_2 &kp KP_NUMBER_9 &kp KP_NUMBER_1 &kp KP_NUMBER_8 &kp KP_NUMBER_4 &kp KP_NUMBER_1 &kp QMARK>;
+            bindings = <&kp KP_NUMBER_2 &kp LS(A) &kp KP_NUMBER_3 &kp KP_NUMBER_0 &kp KP_NUMBER_1 &kp A &kp KP_NUMBER_2 &kp KP_NUMBER_9 &kp KP_NUMBER_1 &kp KP_NUMBER_8 &kp KP_NUMBER_4 &kp KP_NUMBER_1>;
             label = "PASS";
         };
 
@@ -136,10 +136,10 @@
 
         default_layer {
             bindings = <
-&kp Q                 &kp W         &kp E         &kp R                   &kp T                                                        &kp Y        &kp U  &lt 5 I    &kp O    &kp P
-&mt LC(LEFT_SHIFT) A  &kp S         &kp D         &kp F                   &kp G      &kp LS(LG(S))                      &kp MINUS      &kp H        &kp J  &kp K      &kp L    &kp MINUS
-&mt LEFT_SHIFT Z      &kp X         &kp C         &kp V                   &kp B      &lt_to_layer_0 6 INT_MUHENKAN      &kp SEMICOLON  &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
-&kp LCTRL             &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 1 GRAVE  &lt 4 TAB  &lt_to_layer_0 3 SPACE             &kp BACKSPACE  &lt 2 ENTER                             &kp DEL
+&kp Q                 &kp W         &kp E         &kp R                   &kp T                                                           &kp Y        &kp U  &lt 5 I    &kp O    &kp P
+&mt LC(LEFT_SHIFT) A  &kp S         &kp D         &kp F                   &kp G      &kp LS(LG(S))                      &kp SINGLE_QUOTE  &kp H        &kp J  &kp K      &kp L    &kp MINUS
+&mt LEFT_SHIFT Z      &kp X         &kp C         &kp V                   &kp B      &lt_to_layer_0 6 INT_MUHENKAN      &kp SEMICOLON     &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
+&kp LCTRL             &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 1 GRAVE  &lt 4 TAB  &lt_to_layer_0 3 SPACE             &kp BACKSPACE     &lt 2 ENTER                             &kp DEL
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
@@ -169,10 +169,10 @@
 
         ARROW {
             bindings = <
-&MACRO1  &none   &none   &kp LC(HOME)  &ALLCOPY                               &kp EXCLAMATION  &kp AT                 &kp HASH      &kp DOLLAR            &kp PERCENT
-&none    &none   &none   &none         &none     &none      &kp LEFT_BRACKET  &kp CARET        &kp AMPERSAND          &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp PLUS
-&none    &none   &none   &none         &none     &none      &kp DOWN_ARROW    &kp QUESTION     &kp RIGHT_PARENTHESIS  &kp PIPE      &none                 &none
-&trans   &trans  &trans  &none         &none     &none      &none             &none                                                                       &none
+&kp LC(LG(DELETE))  &none   &none   &kp LC(HOME)  &ALLCOPY                               &kp EXCLAMATION  &kp AT             &kp HASH      &kp DOLLAR            &kp PERCENT
+&MACRO              &none   &none   &none         &none     &none      &kp LEFT_BRACKET  &kp CARET        &kp AMPERSAND      &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp PLUS
+&none               &none   &none   &none         &none     &none      &kp DOWN_ARROW    &kp QUESTION     &kp RIGHT_BRACKET  &kp PIPE      &none                 &none
+&trans              &trans  &trans  &none         &none     &none      &none             &none                                                                   &none
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
