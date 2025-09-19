@@ -170,7 +170,7 @@
 
         ARROW {
             bindings = <
-&kp LC(LG(DELETE))  &none  &none  &kp LC(HOME)  &ALLCOPY                               &kp EXCLAMATION  &kp AT             &kp HASH      &kp DOLLAR            &kp PERCENT
+&kp LC(LA(DELETE))  &none  &none  &kp LC(HOME)  &ALLCOPY                               &kp EXCLAMATION  &kp AT             &kp HASH      &kp DOLLAR            &kp PERCENT
 &MACRO              &none  &none  &none         &none     &none      &kp LEFT_BRACKET  &kp CARET        &kp AMPERSAND      &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp PLUS
 &none               &none  &none  &none         &none     &none      &kp DOWN_ARROW    &kp QUESTION     &kp RIGHT_BRACKET  &kp PIPE      &none                 &none
 &none               &none  &none  &none         &none     &none      &none             &none                                                                   &none
