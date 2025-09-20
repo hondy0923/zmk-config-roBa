@@ -148,10 +148,10 @@
 
         FUNCTION {
             bindings = <
-&trans            &trans  &trans  &trans  &trans                     &none           &none           &none            &none  &none
-&trans            &trans  &trans  &trans  &trans  &trans      &none  &none           &kp UP_ARROW    &none            &none  &none
-&kp LEFT_SHIFT    &trans  &trans  &trans  &trans  &trans      &none  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none  &none
-&kp LEFT_CONTROL  &trans  &trans  &none   &none   &none       &none  &none                                                   &none
+&trans            &trans  &trans  &trans  &trans                     &none               &none               &none                &none  &none
+&trans            &trans  &trans  &trans  &trans  &trans      &none  &none               &kp LG(UP_ARROW)    &none                &none  &none
+&kp LEFT_SHIFT    &trans  &trans  &trans  &trans  &trans      &none  &kp LG(LEFT_ARROW)  &kp LG(DOWN_ARROW)  &kp LG(RIGHT_ARROW)  &none  &none
+&kp LEFT_CONTROL  &trans  &trans  &none   &none   &none       &none  &none                                                               &none
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
@@ -159,10 +159,10 @@
 
         NUM {
             bindings = <
-&kp UNDER   &kp COLON          &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9                                       &none               &none               &none                &none  &none
-&kp PERIOD  &kp MINUS          &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &none                 &none          &none               &kp LG(UP_ARROW)    &none                &none  &none
-&kp COMMA   &kp DOUBLE_QUOTES  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp SINGLE_QUOTE      &none          &kp LG(LEFT_ARROW)  &kp LG(DOWN_ARROW)  &kp LG(RIGHT_ARROW)  &none  &none
-&kp PLUS    &kp SLASH          &kp KP_NUMBER_0  &kp DEL          &kp BACKSPACE    &kp ENTER             &kp BACKSPACE  &none                                                               &none
+&kp UNDER   &kp COLON          &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9                                       &none           &none           &none            &none  &none
+&kp PERIOD  &kp MINUS          &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &none                 &none          &none           &kp UP_ARROW    &none            &none  &none
+&kp COMMA   &kp DOUBLE_QUOTES  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp SINGLE_QUOTE      &none          &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none  &none
+&kp PLUS    &kp SLASH          &kp KP_NUMBER_0  &kp DEL          &kp BACKSPACE    &kp ENTER             &kp BACKSPACE  &none                                                   &none
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
