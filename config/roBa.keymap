@@ -173,7 +173,7 @@
 &kp LC(LA(DELETE))  &none  &none  &kp LC(HOME)  &ALLCOPY                               &kp EXCLAMATION  &kp AT             &kp HASH       &kp DOLLAR            &kp PERCENT
 &MACRO              &none  &none  &none         &none     &none      &kp LEFT_BRACKET  &kp CARET        &kp AMPERSAND      &kp ASTERISK   &kp LEFT_PARENTHESIS  &kp PLUS
 &none               &none  &none  &none         &none     &none      &kp DOWN_ARROW    &kp QUESTION     &kp RIGHT_BRACKET  &kp BACKSLASH  &none                 &none
-&none               &none  &none  &none         &none     &none      &none             &none                                                                    &kp LS(LG(S))
+&none               &none  &none  &none         &none     &none      &none             &kp ENTER                                                                &kp LS(LG(S))
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
