@@ -165,7 +165,7 @@
 &kp PLUS    &kp SLASH          &kp KP_NUMBER_0  &kp DEL          &kp BACKSPACE    &kp ENTER             &kp BACKSPACE  &none                                                   &none
             >;
 
-            sensor-bindings = <&encoder_msc_down_up>;
+            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
 
         ARROW {
