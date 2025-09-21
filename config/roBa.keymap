@@ -162,7 +162,7 @@
 &kp UNDER   &kp COLON          &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9                                       &none           &none           &none            &none  &none
 &kp PERIOD  &kp MINUS          &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &none                 &none          &none           &kp UP_ARROW    &none            &none  &none
 &kp COMMA   &kp DOUBLE_QUOTES  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp SINGLE_QUOTE      &none          &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none  &none
-&kp PLUS    &kp SLASH          &kp KP_NUMBER_0  &kp DEL          &kp BACKSPACE    &kp ENTER             &kp BACKSPACE  &none                                                   &none
+&kp PLUS    &kp KP_SLASH       &kp KP_NUMBER_0  &kp DEL          &kp BACKSPACE    &kp ENTER             &kp BACKSPACE  &none                                                   &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
